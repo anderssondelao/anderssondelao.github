@@ -1,34 +1,49 @@
 * {
-    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    background-color: #24252A;
+    padding: 0;   
 }
 
-li, a {
-    font-family: "Arial";
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+.bg-img {
+    border: solid black 1px;
+    background-image: url("img/jan-walter-luigi-mZh44BZpfvk-unsplash.jpeg");
+    background-size: cover;
+    position: relative;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10%;
+.bg-img:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
 }
 
-nav {
-    order: 1;
+.title-1 {
+    font-size: 70px;
+    font-family: Helvetica;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(247, 172, 75);
+    box-shadow: 0.1em 0.2em 2em rgba(247, 172, 75, 1)
 }
 
-.nav__links {
-    list-style: none;
+.bg-color {
+    background-color: rgb(247, 172, 75);
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+.css-text {
+    text-align: justify;
+    padding: 3em;
+    color: white;
+    font-family: Helvetica;
+}
+
+.bg-name {
+    font-family: Helvetica;
+}
+
+.name {
+    padding:20px 0 20px 0;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 172, 75);
 }
