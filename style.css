@@ -1,49 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
-    padding: 0;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* background-color: rgb(254, 255, 240); */
+    color: black;
+    text-align: center;
 }
 
-.bg-img {
-    border: solid black 1px;
-    background-image: url("img/jan-walter-luigi-mZh44BZpfvk-unsplash.jpeg");
-    background-size: cover;
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 8em;
+    color: rgb(255, 187, 0);
+    margin: 50px auto 0 auto;
+    padding: 50px 0 0 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(255, 187, 0);
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: grey;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p {
+    line-height: 2;
+    margin: 10px auto;
+}
+
+hr {
+    border: dotted rgb(255, 187, 0) 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
+.nube-top {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+}
+
+.nube-bottom {
+    position: absolute;
+    right: 375px;
+    bottom: 300px;
+}
+
+.gif-code {
+    width: 25%;
+    float: left;
+    margin: 30px 30px 0 0;
+}
+
+.gif-game {
+    width: 25%;
+    float: right;
+    margin: 0 0 30px 30px;
+}
+
+.contenedor-top {
+    background-color: rgb(254, 255, 240);
     position: relative;
+    padding-top: 100px;
 }
 
-.bg-img:after {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
+.info-personal {
+    margin: 100px;
 }
 
-.title-1 {
-    font-size: 70px;
-    font-family: Helvetica;
-    color: white;
-    padding: 10px;
+.info-personal p{
+    font-size: 18px;
+}
+
+.info-code {
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+
+.info-code p, h3{
+    text-align: left;
+}
+
+.info-game {
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+
+.info-game p, h3{
+    text-align: left;
+}
+
+.contacto {
+    margin: 100px 100px 0 100px;
+}
+
+.contacto h3 {
     text-align: center;
-    background-color: rgb(247, 172, 75);
-    box-shadow: 0.1em 0.2em 2em rgba(247, 172, 75, 1)
 }
 
-.bg-color {
-    background-color: rgb(247, 172, 75);
-}
-
-.css-text {
-    text-align: justify;
-    padding: 3em;
-    color: white;
-    font-family: Helvetica;
-}
-
-.bg-name {
-    font-family: Helvetica;
-}
-
-.name {
-    padding:20px 0 20px 0;
+.buttom {
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 15px 32px;
     text-align: center;
-    font-size: 25px;
-    color: rgb(247, 172, 75);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 2px;
+    cursor: pointer;
+}
+
+.buttom a:hover {
+    color: white;
+}
+
+.socialMedia {
+    background-color: rgb(255, 187, 0);
+    padding: 50px 0 20px;
 }
