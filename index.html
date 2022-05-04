@@ -1,45 +1,256 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo De la O - Parcial 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>El Cafecito</title>
+
+    <!-- BootStrap StyleSheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="about.html">About Me</a></li>
-            </ul>
-        </nav>
+    
+
+    <!-- Header Start -->
+    <header class="header p-3 position-absolute start-0 top-0 end-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="/" class="text-decoration-none text-white fs-5 fw-bold">EL CAFECITO</a>
+
+            <div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+        </div>
     </header>
-    <div class="profile">
-        <img src="img/gooniez.jpeg" alt="NFT">
-        <h1>Pablo Andersson De la O Guerra</h1>
-        <p>Una pandilla de 8888 <b><u>gooniez</u></b> desatada para causar estragos en el <b>metaverso</b>. <br><br>
-        <i>Personajes 3D únicos creados con una variedad sofisticada de rasgos distintivos que viven en la cadena de bloques de Ethereum</i>.</p>
-        <h2>Estudios realizados</h2>
-        <ul>
-            <li>Colegio Amigos de Israel</li>
-            <li>Primer grado - Bachillerato</li>
-            <li>2006 - 2016</li>
-        </ul>
-        <br>
-        <ul>
-            <li>Universidad Francisco Gavidia</li>
-            <li>Primer año</li>
-            <li>2018</li>
-        </ul>
-        <br>
-        <ul>
-            <li>Universidad Autonoma de Santa Ana</li>
-            <li>Primer año - Cuarto año</li>
-            <li>2019 - 2022</li>
-        </ul>
-    </div>
+    <!-- Header End -->
+
+    <!-- Flyout Navigation Start -->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+
+
+        <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
+
+            <div class="row align-items-start">
+
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="/img/ante-samarzija-lsmu0rUhUOk-unsplash.jpeg" alt="Coffe Flavour" class="img-fluid" width="300" height="400" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Asombroso Sabores</h3>
+                            <p>Encuentra más acerca de nuestros maravillosos sabores</p>
+                            <p>Leer más <i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>                
+                </div>
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="/img/ante-samarzija-lsmu0rUhUOk-unsplash.jpeg" alt="Coffe Flavour" class="img-fluid" width="300" height="400" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Asombroso Sabores</h3>
+                            <p>Encuentra más acerca de nuestros maravillosos sabores</p>
+                            <p>Leer más <i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>                
+                </div>
+                <div class="col-12 col-sm-4 mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="/img/ante-samarzija-lsmu0rUhUOk-unsplash.jpeg" alt="Coffe Flavour" class="img-fluid" width="300" height="400" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Asombroso Sabores</h3>
+                            <p>Encuentra más acerca de nuestros maravillosos sabores</p>
+                            <p>Leer más <i class="bi bi-arrow-right-short"></i></p>
+                        </div>
+                    </a>                
+                </div>
+            </div>
+
+            <button class="navbar-toggler dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>     
+    </nav>
+    <!-- Flyout Navigation End -->
+
+    <!-- Hero Start -->
+    <section class="hero">
+        <div class="hero__overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero__video">
+            <source src="/img/coffee_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero__content h-100 container-custom position-relative">
+            <div class="d-flex h-100 align-items-center hero__content-width">
+                <div class="text-white">
+                    <h1 class="hero__heading fw-bold mb-4">Descubre El Verdadero Sabor Del Café</h1>
+                    <p class="lead mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae.</p>
+                    <a href="#" class="mt-2 btn btn-lg btn-outline-light" role="button"> Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#scroll-down" class="hero__scroll-btn">
+            Explora <i class="bi bi-arrow-down-short"></i>
+        </a>
+
+    </section>
+    <!-- Hero End -->
+
+    <a href="scroll-down"></a>
+    <!-- Section One Start -->
+    <section class="steps container-custom">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+                <img src="/img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpeg" alt="Coffe Flavour" class="img-fluid pb-4 steps__section-thumbnail" width="473" height="609" loading="lazy">    
+            </div>
+
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                <div class="steps__content-width">
+                    <span>01</span>
+                    <h1 class="h2 mb-4">Asombrosos Sabores De Café</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet blanditiis voluptatibus explicabo mollitia officiis, doloribus libero molestiae dolorem distinctio.</p>
+                    <a href="#">Leer Más <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section One End -->
+
+    <!-- Section Two Start -->
+    <section class="steps steps--background">
+
+        <div class="container-custom">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+                    <img src="/img/nathan-dumlao-XOhI_kW_TaM-unsplash.jpeg" alt="Health Benefit" class="img-fluid pb-4 steps__section-thumbnail" width="473" height="609" loading="lazy">    
+                </div>
+    
+                <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                    <div class="steps__content-width">
+                        <span>02</span>
+                        <h1 class="h2 mb-4">Sorprendentes Beneficios</h1>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet blanditiis voluptatibus explicabo mollitia officiis, doloribus libero molestiae dolorem distinctio.</p>
+                        <a href="#">Leer Más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section Two End -->
+
+    <!-- Section Three Start -->
+    <section class="steps container-custom">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+                <img src="/img/tyler-nix-3uSHEffsDXI-unsplash.jpeg" alt="Essential Nutrients" class="img-fluid pb-4 steps__section-thumbnail" width="473" height="609" loading="lazy">    
+            </div>
+
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                <div class="steps__content-width">
+                    <span>03</span>
+                    <h1 class="h2 mb-4">Nutrientes Esenciales</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet blanditiis voluptatibus explicabo mollitia officiis, doloribus libero molestiae dolorem distinctio.</p>
+                    <a href="#">Leer Más <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section Three End -->
+
+
+    <!-- Section With 3 Columns Start -->
+    <section class="bg-dark text-white py-4">
+        <div class="container-custom my-4">
+            <div class="row">
+
+                <div class="col-12 col-sm-4 mb-4">
+                    <img src="/img/nathan-dumlao-6VhPY27jdps-unsplash.jpeg" class="mb-4 img-fluid" alt="Coffee Flavour" width="473" height="209" loading="lazy">
+                    <h3>Asombroso Sabores</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus dolore autem sint exercitationem perspiciatis voluptatem, sed excepturi aliquam libero.</p>
+                </div>
+
+                <div class="col-12 col-sm-4 mb-4">
+                    <img src="/img/pexels-juan-pablo-serrano-arenas-894695.jpeg" class="mb-4 img-fluid" alt="Healt Benefit" width="473" height="209" loading="lazy">
+                    <h3>Grandes Beneficios</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus dolore autem sint exercitationem perspiciatis voluptatem, sed excepturi aliquam libero.</p>
+                </div>
+
+                <div class="col-12 col-sm-4 mb-4">
+                    <img src="/img/tyler-nix-2rZq49uGxLk-unsplash.jpeg" class="mb-4 img-fluid" alt="Essential Nutrients" width="473" height="209" loading="lazy">
+                    <h3>Nutrientes Esenciales</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus dolore autem sint exercitationem perspiciatis voluptatem, sed excepturi aliquam libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section With 3 Columns End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark text-white">
+        <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="me-2 text-muted text-decoration-none">
+                    <i class="bi bi-cup"></i>
+                    <span>&copy; 2022 EL CAFECITO</span>
+                </a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+
+
+
+
+
+        </div>
+
+
+
+
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
