@@ -11993,7 +11993,7 @@ fieldset:disabled .btn {
 
 .steps__content-width {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .steps--background {
